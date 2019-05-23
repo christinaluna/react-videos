@@ -29,9 +29,9 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="ui container">
+            <div className="ui container" style={{ marginTop: '20px' }}>
                 <SearchBar onFormSubmit={this.onTermSubmit} />
-                <div className="ui grid">
+                <div className="ui stackable grid">
                     <div className="ui row">
                         <div className="eleven wide column">
                             <VideoDetail video={this.state.selectedVideo} />
